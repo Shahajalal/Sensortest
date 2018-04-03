@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/view1"
+    android:orientation="vertical"
+    android:padding="30sp"
+    tools:context="com.example.shahajalal.sensortest.MainActivity">
+
+
+
+    <LinearLayout
+        android:id="@+id/accelerometerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="30sp"
+        >
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xvalue"
+            />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yvalue"
+            />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zvalue"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/gyrometerid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/accelerometerid"
+        >
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/xGyrovalue"
+            />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/yGyrovalue"
+            />
+        <TextView
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/zGyrovalue"
+            />
+
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/gesturelayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/gyrometerid"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/gestureText"
+            />
+         <TextView
+            android:layout_gravity="center"
+            android:layout_margin="20sp"
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/globalText"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="30sp"
+        android:layout_below="@+id/gesturelayout"
+        >
+        <Button
+            android:id="@+id/startButtonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start"
+            android:padding="30dp"
+            />
+
+        <Button
+            android:id="@+id/endButtonid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End"
+            android:padding="30dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
